@@ -1,0 +1,7 @@
+data
+.env
+.git
+.idea/*
+.idea
+*.pyc
+*.ipynb_checkpoints
