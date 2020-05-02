@@ -7,3 +7,4 @@ env
 *.pyc
 *.ipynb_checkpoints
 *__pycache*
+.DS_Store
