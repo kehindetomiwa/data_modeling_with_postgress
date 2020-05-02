@@ -1,5 +1,7 @@
 # Data modeling with postgress (Udacity Nanadegree)
+
 ##Introduction
+
 A startup called Sparkify wants to analyze the data they've been collecting 
 on songs and user activity on their new music streaming app. The analytics 
 team is particularly interested in understanding what songs users are 
@@ -16,6 +18,7 @@ to you by the analytics team from Sparkify and compare your
 results with their expected results.
 
 ##Project Description
+
 In this project, you'll apply what you've learned on data 
 modeling with Postgres and build an ETL pipeline using Python. 
 To complete the project, you will need to define fact and 
@@ -25,6 +28,7 @@ in two local directories into these tables in Postgres
 using Python and SQL.
 
 ## Project requirements
+
 -   docker
 -   python3
 -   docker-compose
