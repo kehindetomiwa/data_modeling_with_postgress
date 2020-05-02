@@ -1,0 +1,8 @@
+numpy==1.18.3
+pandas==1.0.3
+psycopg2==2.8.5
+pyspark==2.4.4
+python-dateutil==2.8.1
+python-dotenv==0.13.0
+pytz==2020.1
+six==1.14.0

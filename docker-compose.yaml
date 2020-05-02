@@ -1,0 +1,40 @@
+version: "3.7"
+services:
+  postgres:
+    image: postgres:latest
+    container_name: pg_container
+    restart: always
+    volumes:
+      - postgresdb:/var/lib/postgresql
+    environment:
+      - "POSTGRES_USER=postgres"
+      - "POSTGRES_PASSWORD=postgres"
+      - "POSTGRES_DB=postgres"
+    ports:
+      - 50002:5432
+
+  app:
+    container_name: app
+    image: app
+    build:
+      context: .
+      dockerfile: "Dockerfile"
+    links:
+      - postgres
+    environment:
+      - PGPASSWORD=student
+      - PGUSER=student
+      - PGDATABASE=studentdb
+      - PGHOST=student
+      - PGPORT=5432
+    volumes:
+      - $PWD/:/src/
+    ports:
+      - "8889:8888"
+
+    depends_on:
+      - postgres
+    restart: on-failure
+
+volumes:
+  postgresdb: {}

@@ -1,7 +1,9 @@
 data
 .env
+env
 .git
 .idea/*
 .idea
 *.pyc
 *.ipynb_checkpoints
+*__pycache*
