@@ -15,6 +15,12 @@ db_password = os.getenv('local_db_password')
 
 
 def process_song_file(cur, filepath):
+    """
+    function proceess song files
+    :param cur: instance of DB connection
+    :param filepath: path to a single song file
+    update Database with extracted content
+    """
     # open song file
     df = pd.read_json(filepath, lines=True)
     df['duration'] = round(df['duration'])
@@ -31,6 +37,12 @@ def process_song_file(cur, filepath):
 
 
 def process_log_file(cur, filepath):
+    """
+    function proceess song files
+    :param cur: instance of DB connection
+    :param filepath: path to a single log files
+    update Database with extracted content
+    """
     # open log file
     df = pd.read_json(filepath, lines=True)
 
@@ -93,6 +105,12 @@ def process_log_file(cur, filepath):
 
 
 def process_data(cur, conn, filepath, func):
+    """
+    a global function to process log/song files
+    :param cur: cursor
+    :param conn: connection to DB
+    :param filepath: path to the top directory
+    """
     # get all files matching extension from directory
     all_files = []
     for root, dirs, files in os.walk(filepath):

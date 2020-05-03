@@ -1,6 +1,6 @@
 # Data modeling with postgress (Udacity Nanadegree)
 
-##Introduction
+## Introduction
 
 A startup called Sparkify wants to analyze the data they've been collecting 
 on songs and user activity on their new music streaming app. The analytics 
@@ -17,7 +17,7 @@ test your database and ETL pipeline by running queries given
 to you by the analytics team from Sparkify and compare your 
 results with their expected results.
 
-##Project Description
+## Project Description
 
 In this project, you'll apply what you've learned on data 
 modeling with Postgres and build an ETL pipeline using Python. 
